@@ -1,0 +1,21 @@
+{
+  "name": "byu-fake-leave-application-generator",
+  "version": "1.0.0",
+  "description": "白云学院假条生成工具",
+  "private": false,
+  "author": "Wesley-0808",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wesley-0808/BYU-fake-leave-application-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Wesley-0808/BYU-fake-leave-application-generator/issues"
+  },
+  "homepage": "https://github.com/Wesley-0808/BYU-fake-leave-application-generator#readme",
+  "scripts": {
+    "web:dev": "pnpm --filter @byu-flag/web dev",
+    "web:only-build": "pnpm --filter @byu-flag/web only-build",
+    "web:build": "pnpm --filter @byu-flag/web build"
+  }
+}

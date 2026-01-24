@@ -1,0 +1,4 @@
+{
+  "Cookie": "HWWAFSESID=75f2c736ed97c813e7; HWWAFSESTIME=1769271265468; langType=zh_CN; serviceUrl=https%3A%2F%2Fjk.educationgroup.cn%2Fpapi%2Fiaauthclient%2Foauth%2Flogin%3Ftk%3D91d9b0abf7dc3d95be0dd561b968717e%26code%3D12b8032f5031d35c3db271b3ec70206e%26state%3D1; auth_type=oauth2; tenant_key=91d9b0abf7dc3d95be0dd561b968717e; access_token=96986c8c0aa533f5f9f0fc2b91e55cbf; caslogouturl=https%3A%2F%2Fmy.baiyunu.edu.cn%2Fpapi%2Fiaauthclient%2Foauth%2Flogouturl%3Fservice%3Dhttps%253A%252F%252Fmy.baiyunu.edu.cn%252Fpapi%252Fiaauthclient%252Foauth%252Flogin%253Ftk%253D91d9b0abf7dc3d95be0dd561b968717e; ETEAMSID=THIRDSSO_8a8405e42e5e6b29017d2d818c6c88b8; csrfToken=a6ffc76d-213a-4e8c-a5a7-a35930e6083c; langType=zh_CN",
+  "eteamsid": "THIRDSSO_8a8405e42e5e6b29017d2d818c6c88b8"
+}
