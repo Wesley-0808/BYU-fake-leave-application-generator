@@ -1,4 +1,4 @@
-import { computed, defineComponent } from "vue";
+import { computed, defineComponent, watch } from "vue";
 import { useRoute, useRouter } from "vue-router";
 import dayjs from "dayjs";
 import {
@@ -66,6 +66,15 @@ export default defineComponent({
         "second",
       );
     });
+
+    // 更新网页标题
+    watch(
+      () => template,
+      () => {
+        document.title = `请假申请-${template.value.name || "?"}-${dayjs(template.value.submitTime || new Date()).format("YYYY-MM-DD")}`;
+      },
+      { immediate: true },
+    );
 
     const goBack = () => {
       router.push({ path: "/" });
@@ -2025,7 +2034,7 @@ export default defineComponent({
                                                       ).format("HH:mm:ss")}
                                                       client="移动端"
                                                       type="学院党组织书记审批：批准"
-                                                      content={<p>同意、</p>}
+                                                      content={<p>同意</p>}
                                                       hasQuote={true}
                                                     />
                                                   )}

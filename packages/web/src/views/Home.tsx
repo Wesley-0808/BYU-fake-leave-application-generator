@@ -85,7 +85,9 @@ export default defineComponent({
       return {
         disabled: data.disabled,
         type: data.type,
-        label: data.disabled ? `${data.label}(超出时间范围)` : data.label,
+        label: data.disabled
+          ? `${data.label}(超出时间范围，生成器只支持7天内的假条)`
+          : data.label,
       };
     });
 
@@ -152,7 +154,7 @@ export default defineComponent({
                 enable-time-picker
                 allow-input
                 clearable
-                tips={timeRangeStatus.value.label}
+                tips={`共${timeRangeStatus.value.label}`}
                 status={timeRangeStatus.value.disabled ? "error" : "default"}
               />
             </FormItem>

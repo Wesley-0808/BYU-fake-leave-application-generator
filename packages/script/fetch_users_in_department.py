@@ -127,6 +127,7 @@ def fetch_users_for_dept(session, dept_id):
         try:
             response = session.post(API_URL, json=payload)
             if response.status_code != 200:
+                print(f"请求失败，状态码: {response.status_code}")
                 break
             
             result = response.json()

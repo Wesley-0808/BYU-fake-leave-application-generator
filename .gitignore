@@ -1,3 +1,5 @@
 source_data.json
 node_modules
 *.har
+dist
+.DS_Store
