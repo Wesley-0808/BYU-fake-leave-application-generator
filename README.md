@@ -1,6 +1,6 @@
 ## 白云学院假（jiǎ）条生成器
 
-##### [生成器在线使用](https://byu-flag.wwen.work)
+##### [在线地址](https://byu-flag.wwen.work) [备用](https://byu-flag.wesley.net.cn)
 
 ### 代码结构
 ```
@@ -8,9 +8,9 @@ BYU-fake-leave-application-generator/
 ├─ packages/
 │  ├─ web/                  # 前端网页
 │  ├─ script/               # Python脚本
-│  │  ├─ fetch_departments.py           # 获取部门结构
+│  │  ├─ fetch_departments.py           # 获取部门架构
 │  │  ├─ fetch_users_in_department.py   # 递归部门获取人员信息
-│  │  ├─ fetch_users_in_root.py         # 在根结构获取人员信息
+│  │  ├─ fetch_users_in_root.py         # 在根组织获取人员信息
 │  │  └─ data_convert.py                # 数据转换脚本
 │  │  ├─ session.json                   # 存储 Cookie 与认证信息 (需手动配置)
 │  │  └─ requirements.txt               # Python 依赖列表
@@ -38,11 +38,11 @@ BYU-fake-leave-application-generator/
   1. 看个人需要决定是否使用虚拟环境。
   2. `pip install -r packages/script/requirements.txt`。
 - **身份认证**: 
-  1. 用网页登录学校一站式服务平台，获取 `Cookie` 和 `eteamsid`，不会就上百度问😄。
+  1. 用网页登录学校一站式服务平台，获取 `Cookie` 和 `eteamsid`，不会就上百度问😄。请注意保护好认证密钥！不要上传的开放平台避免被他人盗用身份。
   2. 填入 `packages/script/session.json` 中。
 - **执行流程**:
-  1. 运行 `python fetch_departments.py` 获取组织结构。
-  2. 运行 `python fetch_users_in_root.py` 通过根组织结构获取人员列表 (推荐，获取速度比按部门获取快，内置分页500条一页，可按需修改。)
+  1. 运行 `python fetch_departments.py` 获取组织架构。
+  2. 运行 `python fetch_users_in_root.py` 或 `python fetch_users_in_department.py` 获取人员列表 (推荐用`fetch_users_in_root.py`，获取速度比按部门获取快，内置分页500条一页，可按需修改。)
   3. 运行 `python data_convert.py` 生成前端可用的 `data.json`。
 
 ### ⚠️ 免责声明

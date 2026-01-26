@@ -1,0 +1,12 @@
+{
+  "name": "@byu-flag/utils",
+  "private": true,
+  "description": "白云学院一站式服务平台人员信息数据包",
+  "author": "Wesley-0808",
+  "license": "MIT",
+  "main": "index.ts",
+  "dependencies": {
+    "@byu-flag/export": "workspace:^",
+    "dayjs": "^1.11.19"
+  }
+}

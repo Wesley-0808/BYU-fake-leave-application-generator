@@ -7,6 +7,7 @@ export interface User {
   userid: string; // 用户ID
   position: string; // 职位
   name: string; // 姓名
+  gender: "male" | "female"; // 性别
   department: string; // 部门名称
   department_id: string; // 部门 ID
 }
@@ -24,3 +25,18 @@ export interface Department {
 }
 
 export type DepartmentList = Department[];
+
+export interface Template {
+  modelType: "PC" | "Mobile";
+  name: string;
+  number: string;
+  class: string;
+  department: string;
+  type: string;
+  time: string[];
+  reason: string;
+  courses: string[];
+  counselor: string;
+  partySecretary: string;
+  submitTime: string;
+}

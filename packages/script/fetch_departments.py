@@ -78,6 +78,8 @@ def fetch_tree_level(session, node=None):
                 if isinstance(data, dict):
                     return data.get("data", [])
                 return data
+        else:
+            print(f"请求失败，状态码: {response.status_code}")
     except Exception as e:
         print(f"获取子节点失败: {e}")
     return []

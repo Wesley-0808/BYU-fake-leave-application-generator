@@ -99,6 +99,7 @@ def fetch_users():
                     "position": item.get("position"),
                     "name": item.get("name"),
                     "mobile": item.get("mobile"),
+                    "gender": item.get("avatar", {}).get("gender"),
                     "department": item.get("department"),
                     "department_id": item.get("departmentId")
                 }

@@ -11,9 +11,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "pinia": "^2.1.7",
+    "@byu-flag/export": "workspace:^",
+    "@byu-flag/utils": "workspace:^",
+    "dayjs": "^1.11.19",
+    "tdesign-icons-vue-next": "^0.4.2",
+    "tdesign-vue-next": "^1.18.0",
     "vue": "^3.4.15",
-    "@byu-flag/export": "workspace:^"
+    "vue-router": "4"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.3",

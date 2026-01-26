@@ -1,10 +1,17 @@
-import { createApp } from 'vue'
-import { createPinia } from 'pinia'
-import App from './App'
-import './style.less'
+import { createApp } from "vue";
+import TDesign from "tdesign-vue-next";
+import App from "./App";
+import router from "./router";
+import "./style.less";
 
-const app = createApp(App)
-const pinia = createPinia()
+import "tdesign-vue-next/es/style/index.css";
+import "tdesign-vue-next/dist/reset.css";
 
-app.use(pinia)
-app.mount('#app')
+import "./lib.css";
+import "./lib.less";
+
+const app = createApp(App);
+
+app.use(router);
+app.use(TDesign);
+app.mount("#app");
