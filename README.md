@@ -1,17 +1,18 @@
-## 白云学院假（jiǎ）条生成器
+## 白云学院假（jiǎ）条生成器（`BYU-FLAG`）
+_`BYU-FLAG`即：BaiyunU Fake Leave Application Generator_
 
 ##### [在线地址](https://byu-flag.wwen.work) [备用](https://byu-flag.wesley.net.cn)
 
 ### ☁️ About
 
-#### 这是一个广东白云学院假（jiǎ，第三声）条生成器的项目，用于生成请假审批的页面。
+#### 这是一个广东白云学院假（jiǎ，发第三声）条生成器的项目，用于生成请假审批的页面。
 
 ### 🚀 Feature
 
 - 1:1复刻学校一站式服务平台
 - 自选班级、辅导员、学院书记
 - 自定义请假时间范围、原因以及提交时间
-- 自动随机生成流程审批时间
+- 自动、随机生成流程审批时间
 - 在线网页生成
 - 支持二维码快速生成
 
@@ -19,11 +20,11 @@
 
 #### 为什么不支持生成7天以上的？
 
-因为真实的流程需要学生处、教务处审批，且一般辅导员也不会直接让你请7天以上，基本上都是分几次提流程
+因为真实的流程需要学生处、教务处审批，且一般来说辅导员也不会直接让你请7天以上，基本上都是叫你分几次提流程
 
 #### 如何获得更为真实的截图？
 
-在企业微信内生成即可。
+在企业微信内生成即可。（可以填写完信息后，使用企业微信扫生成器上的二维码打开）
 
 #### 用途是什么？
 
@@ -73,11 +74,11 @@ BYU-fake-leave-application-generator/
   1. 看个人需要决定是否使用虚拟环境。
   2. `pip install -r packages/script/requirements.txt`。
 - **身份认证**:
-  1. 用网页登录学校一站式服务平台，获取 `Cookie` 和 `eteamsid`，不会就上百度问😄。请注意保护好认证密钥！不要上传的开放平台避免被他人盗用身份。
+  1. 用网页登录学校一站式服务平台，获取 `Cookie` 和 `eteamsid`（不会就上百度😄）。请注意保护好认证密钥！不要上传的开放平台避免被他人盗用身份。
   2. 填入 `packages/script/session.json` 中。
 - **执行流程**:
   1. 运行 `python fetch_departments.py` 获取组织架构。
-  2. 运行 `python fetch_users_in_root.py` 或 `python fetch_users_in_department.py` 获取人员列表 (推荐用`fetch_users_in_root.py`，获取速度比按部门获取快，内置分页500条一页，可按需修改。)
+  2. 运行 `python fetch_users_in_root.py` 或 `python fetch_users_in_department.py` 获取人员列表 (推荐用`fetch_users_in_root.py`，因为获取速度比按部门获取快，内置分页500条一页，可自行按需修改。)
   3. 运行 `python data_convert.py` 生成前端可用的 `data.json`。
 
 ### ⚠️ 免责声明
